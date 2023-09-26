@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Iniciar Sesión</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-content color="medium" padding>
+    <form #form="ngForm">
+      <ion-grid>
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+              <h3>Iniciá Sesión</h3>
+            </div>
+            <div padding>
+              <ion-item>
+                <ion-input name="email" type="email" placeholder="your@email.com" ngModel required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="password" type="password" placeholder="Password" ngModel required></ion-input>
+              </ion-item>
+            </div>
+            <div padding>
+              <ion-button color="tertiary" size="large" type="submit" [disabled]="form.invalid" expand="block">Iniciar
+                Sesión</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+    <ion-grid>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="12"><a target="_self" rel="noopener noreferrer" href="register"><p color="tertiary"class="ion-text-center">Soy Nuevo</p></a> </ion-col>
+      </ion-row>
+      <ion-row class="ion-justify-content-center">
+       <ion-col size="12"><a target="_self" rel="noopener noreferrer" href=""><p color="tertiary"class="ion-text-center">Olvidé mi contraseña</p></a></ion-col>
+      </ion-row>
+    </ion-grid>
+ 
+  </ion-content>
+</ion-content>

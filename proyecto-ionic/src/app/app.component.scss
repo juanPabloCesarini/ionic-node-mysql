@@ -1,5 +1,5 @@
 ion-menu ion-content {
-  --background: var(--ion-item-background, var(--ion-background-color, #d66464));
+  --background: var(--ion-item-background, var(--ion-background-color, #6a64ff));
 }
 
 ion-menu.md ion-content {
@@ -7,12 +7,7 @@ ion-menu.md ion-content {
   --padding-end: 8px;
   --padding-top: 20px;
   --padding-bottom: 20px;
-  background: #fceabb;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #f8b500, #fceabb);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #f8b500, #fceabb);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 ion-menu.md ion-list {
@@ -44,7 +39,7 @@ ion-menu.md ion-list#labels-list ion-list-header {
 
   margin-bottom: 18px;
 
-  color: #55cfee77;
+  color: black;
 
   min-height: 26px;
 }
